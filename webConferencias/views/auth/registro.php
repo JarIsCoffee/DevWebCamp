@@ -2,6 +2,10 @@
     <h2 class="auth__heading"><?php echo $titulo; ?></h2>
     <p class="auth__texto">Regístrate en DevWebcamp</p> 
 
+    <?php 
+        require_once __DIR__ . '/../templates/alertas.php';
+    ?>
+
     <form method="POST" action="/registro" class="formulario">
         <div class="formulario__campo">
             <label for="nombre" class="formulario__label">Nombre</label>

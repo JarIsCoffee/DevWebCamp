@@ -1,5 +1,6 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
+@use 'sass:color';
 
 .formulario {
     display: flex;
@@ -18,12 +19,13 @@
     }
     &__input {
         padding: 1rem;
-        border: 1px solid v.$gris-claro;
+        border: 1px solid color.scale(v.$gris-claro, $lightness: -20%);
         border-radius: .5rem;
     }
 
     &__submit {
         @include m.boton(v.$azul, v.$blanco);
+        width: auto;
         align-self: flex-start;
     }
 }
