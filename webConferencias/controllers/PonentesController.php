@@ -8,8 +8,18 @@ use MVC\Router;
 class PonentesController {
 
     public static function index(Router $router) {
-        $router->render('admin/dashboard/index', [
+        $router->render('admin/ponentes/index', [
             'titulo' => 'Ponentes / Conferencistas'
+        ]);
+    }
+
+    public static function crear(Router $router) {
+
+
+
+        
+        $router->render('admin/ponentes/crear', [
+            'titulo' => 'Registrar Ponentes'
         ]);
     }
 }

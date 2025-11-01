@@ -28,7 +28,8 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
-
+includes/.env
+includes/.env*
 # ====================================
 #  Composer / PHP
 # ====================================
@@ -85,3 +86,8 @@ Desktop.ini
 dump.rdb
 *.sql
 *.sqlite
+
+## archivos de css
+
+/public/build/css/
+/public/build/js/
