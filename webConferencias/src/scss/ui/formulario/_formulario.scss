@@ -6,6 +6,19 @@
     display: flex;
     flex-direction: column;
 
+    &__fieldset {
+        border: none;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    &__legend {
+        color: v.$gris;
+        font-size: 2,2rem;
+        margin-bottom: 2rem;
+       
+    }
+
     &__campo {
         display: flex;
         flex-direction: column;
@@ -21,11 +34,20 @@
         padding: 1rem;
         border: 1px solid color.scale(v.$gris-claro, $lightness: -20%);
         border-radius: .5rem;
+
+        &--file {
+            border: none;
+        }
+
     }
 
     &__submit {
         @include m.boton(v.$azul, v.$blanco);
         width: auto;
         align-self: flex-start;
+
+        &--registrar {
+            width: 100%;
+        }
     }
 }
