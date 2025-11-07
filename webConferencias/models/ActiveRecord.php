@@ -7,6 +7,8 @@ class ActiveRecord {
     protected static $tabla = '';
     protected static $columnasDB = [];
 
+    
+
     // Alertas y Mensajes
     protected static $alertas = [];
     
@@ -93,7 +95,7 @@ class ActiveRecord {
     // Registros - CRUD
     public function guardar() {
         $resultado = '';
-        if(!is_null($this->id)) {
+        if (isset($this->id)) {
             // actualizar
             $resultado = $this->actualizar();
         } else {
